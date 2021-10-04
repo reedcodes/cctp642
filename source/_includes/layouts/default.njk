@@ -11,18 +11,20 @@
     {% include "partials/header.njk" %}
   {% endblock header %}
 
-  <main class="main">
+
+  {% block main_title %}
     {% if not home %}
       <h1>{{ title }}</h1>
     {% endif %}
+  {% endblock main_title %}
 
-    {% block main_content %}
+  {% block main_content %}
+    <main class="main">
       {{ content | safe }}
-    {% endblock main_content %}
-  </main>
+    </main>
+  {% endblock main_content %}
 
-  {% block scripts %}
-  {% endblock scripts %}
+  {% block scripts %}{% endblock scripts %}
 
 </body>
 </html>

@@ -1,1 +1,23 @@
+@use 'type';
+@use 'colors/color-tokens' as *;
+
 @use 'reveal';
+@use 'theme/template/mixins' as mix;
+
+@import 'theme/template/settings';
+
+// Override theme settings (see theme/template/settings.scss)
+$backgroundColor: $color-warmgray;
+$mainFont: type.$body;
+$linkColor: $color-powderblue;
+$linkColorHover: $color-on-warmgray;
+$headingFont: type.$heading;
+$headingTextShadow: none;
+$headingLetterSpacing: inherit;
+$headingTextTransform: none;
+$selectionBackgroundColor: inherit;
+
+// Change text colors against light slide backgrounds
+@include mix.light-bg-text-color( $color-on-warmgray );
+
+@import 'theme/template/theme';

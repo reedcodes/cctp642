@@ -5,3 +5,31 @@
 {% endblock head_css %}
 
 {% block header %}{% endblock header %}
+{% block main_title %}{% endblock main_title %}
+
+{% block main_content %}
+  <div class="reveal">
+    <div class="slides">
+      {{ content | safe }}
+    </div>
+  </div>
+{% endblock main_content %}
+
+{% block scripts %}
+  <script src="{{ dirPath }}/assets/js/reveal.js"></script>
+  <script>
+    Reveal.initialize(
+      {
+        hash: true,
+        hashOneBasedIndex: true,
+        controls: true,
+        controlsLayout: 'edges',
+        controlsBackArrows: 'visible',
+        progress: false,
+        transition: 'fade',
+        transitionSpeed: 'slow',
+        fragmentInURL: false
+      }
+    );
+  </script>
+{% endblock scripts %}
