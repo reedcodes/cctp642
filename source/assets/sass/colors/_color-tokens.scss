@@ -1,0 +1,19 @@
+/* 🛑 STOP!
+  Do not change this file directly.
+  Modify colors in source/_data/colors.js
+ */
+
+$color-black: #333333 !default;
+$color-on-black: #9B9B9B !default;
+
+$base-color-tokens: ("black");
+
+$color-tokens: (
+  "color-black": $color-black,
+  "color-on-black": $color-on-black
+) !default;
+
+@mixin color-tokens() {
+  --color-black: #{$color-black};
+  --color-on-black: #{$color-on-black};
+}
