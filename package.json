@@ -21,6 +21,7 @@
     "sass": "gulp sass",
     "eleventy:dev": "SITE_ENV=dev npx @11ty/eleventy",
     "eleventy": "SITE_ENV=prod npx @11ty/eleventy",
+    "build:dev": "npm-run-all tokens sass eleventy:dev",
     "build": "npm-run-all tokens sass eleventy"
   }
 }

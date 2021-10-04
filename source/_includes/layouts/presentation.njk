@@ -1,3 +1,7 @@
-{%- extends "layouts/default.njk" -%}
+{% extends "layouts/default.njk" %}
 
-{%- block header -%}{%- endblock header -%}
+{% block head_css %}
+  <link rel="stylesheet" media="screen" href="{{ dirPath }}/assets/css/presentation.css" />
+{% endblock head_css %}
+
+{% block header %}{% endblock header %}
