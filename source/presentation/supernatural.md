@@ -3,12 +3,14 @@ title: Religion on _Supernatural_
 ---
 
 {% revealsection %}
+
 <cite>Engstrom, Erika and Joseph M. Valenzano III. "Demon Hunters and Hegemony: Portrayal of Religion on the CW's _Supernatural_." _Journal of Media and Religion_, vol. 9, 2010, pp. 67–83. [doi:10.1080/15348421003738785](https://doi.org/10.1080/15348421003738785).</cite>
 {% endrevealsection %}
 
 
 
 {% revealsection %}
+
 ## Religion on television
 
 "Television as a medium thus holds the ability to simultaneously forward hegemonic portrayals of religion(s) and expose viewers to other, less familiar religions." (68)
@@ -17,6 +19,7 @@ title: Religion on _Supernatural_
 
 
 {% revealsection %}
+
 ## Many television series
 
 - ambiguous or absent religion
@@ -33,6 +36,7 @@ title: Religion on _Supernatural_
 
 
 {% revealsection %}
+
 ## Research question
 
 "Thus, we aim to discover how the series _Supernatural_ portrays religion in terms of hegemony: which one(s) does it portray as dominant and how does it portray “nonmainstream” religions?" (74)
@@ -41,6 +45,7 @@ title: Religion on _Supernatural_
 
 
 {% revealsection %}
+
 ## Method
 
 **Sample:** all 60 episodes of the first three seasons of _Supernatural_ on DVD
@@ -53,6 +58,7 @@ title: Religion on _Supernatural_
 
 
 {% revealsection %}
+
 ## Episode "dimensions"
 
 1. the main enemy or antagonist
@@ -64,6 +70,7 @@ title: Religion on _Supernatural_
 
 
 {% revealsection %}
+
 ## Findings
 
 | Story Element | Number of Episodes |
@@ -93,6 +100,7 @@ title: Religion on _Supernatural_
 
 
 {% revealsection %}
+
 ## Good vs. evil
 
 1. Catholicism is portrayed as "good"
@@ -106,6 +114,7 @@ title: Religion on _Supernatural_
 
 
 {% revealsection %}
+
 ## Catholicism without being "Catholic"
 
 - Latin language and incantations
@@ -116,6 +125,7 @@ title: Religion on _Supernatural_
 
 
 {% revealsection %}
+
 ## Further research
 
 - Do the brothers experience any religious conversion due to their experiences?
