@@ -5,5 +5,5 @@ home: true
 ---
 
 {% for page in collections.nav -%}
-- [{{ page.data.title }}]({{ page.data.dirPath }}{{ page.url }})
+- [{{ page.data.title }}]({{ page.url | url }})
 {%- endfor %}

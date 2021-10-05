@@ -3,8 +3,5 @@
   "tags": [
     "nav",
     "presentation"
-  ],
-  "eleventyComputed": {
-    "dirPath": "{{ env.dirPathDev if ( env.environment == 'dev' ) else env.dirPath }}"
-  }
+  ]
 }

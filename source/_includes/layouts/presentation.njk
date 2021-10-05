@@ -1,7 +1,7 @@
 {% extends "layouts/default.njk" %}
 
 {% block head_css %}
-  <link rel="stylesheet" media="screen" href="{{ dirPath }}/assets/css/presentation.css" />
+  <link rel="stylesheet" media="screen" href="{{ '/assets/css/presentation.css' | url }}" />
 {% endblock head_css %}
 
 {% block header %}{% endblock header %}
@@ -16,8 +16,8 @@
 {% endblock main_content %}
 
 {% block scripts %}
-  <script src="{{ dirPath }}/assets/js/reveal.js"></script>
-  <script src="{{ dirPath }}/assets/js/reveal/markdown/markdown.js"></script>
+  <script src="{{ '/assets/js/reveal.js' | url }}"></script>
+  <script src="{{ '/assets/js/reveal/markdown/markdown.js' | url }}"></script>
   <script>
     Reveal.initialize(
       {
