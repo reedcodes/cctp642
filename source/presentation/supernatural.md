@@ -1,12 +1,6 @@
 ---
-title: Content Analysis Presentation
+title: Religion on _Supernatural_
 ---
-
-{% revealsection %}
-# Religion on _Supernatural_
-{% endrevealsection %}
-
-
 
 {% revealsection %}
 <cite>Engstrom, Erika and Joseph M. Valenzano III. "Demon Hunters and Hegemony: Portrayal of Religion on the CW's _Supernatural_." _Journal of Media and Religion_, vol. 9, 2010, pp. 67–83. [doi:10.1080/15348421003738785](https://doi.org/10.1080/15348421003738785).</cite>

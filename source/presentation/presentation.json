@@ -3,5 +3,6 @@
   "tags": [
     "nav",
     "presentation"
-  ]
+  ],
+  "permalink": "/{{ page.fileSlug }}/"
 }

@@ -10,6 +10,10 @@
 {% block main_content %}
   <div class="reveal">
     <div class="slides">
+      {% revealsection %}
+        # {{ title }}
+      {% endrevealsection %}
+
       {{ content | safe }}
     </div>
   </div>
