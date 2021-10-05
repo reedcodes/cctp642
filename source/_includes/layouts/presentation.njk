@@ -1,0 +1,43 @@
+{% extends "layouts/default.njk" %}
+
+{% block head_css %}
+  <link rel="stylesheet" media="screen" href="{{ '/assets/css/presentation.css' | url }}" />
+{% endblock head_css %}
+
+{% block header %}{% endblock header %}
+{% block main_title %}{% endblock main_title %}
+
+{% block main_content %}
+  <div class="reveal">
+    <div class="slides">
+      {% revealsection %}
+        # {{ title }}
+      {% endrevealsection %}
+
+      {{ content | safe }}
+    </div>
+  </div>
+{% endblock main_content %}
+
+{% block scripts %}
+  <script src="{{ '/assets/js/reveal.js' | url }}"></script>
+  <script src="{{ '/assets/js/reveal/markdown/markdown.js' | url }}"></script>
+  <script>
+    Reveal.initialize(
+      {
+        plugins: [
+          RevealMarkdown
+        ],
+        hash: true,
+        hashOneBasedIndex: true,
+        controls: true,
+        controlsLayout: 'edges',
+        controlsBackArrows: 'visible',
+        progress: false,
+        transition: 'fade',
+        transitionSpeed: 'slow',
+        fragmentInURL: false
+      }
+    );
+  </script>
+{% endblock scripts %}

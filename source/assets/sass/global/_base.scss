@@ -1,0 +1,63 @@
+@use 'type';
+
+:root {
+  --body-background: var(--color-warmgray);
+  --body-on-background: var(--color-on-warmgray);
+  --body-text: var(--color-on-blue);
+  --link-color: var(--color-powderblue);
+  --link-on-color: var(--color-on-warmgray);
+}
+
+
+
+* { box-sizing: border-box; }
+
+
+
+body {
+  background: var(--body-background);
+  color: var(--body-text);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: type.$body;
+}
+
+
+
+:is( h1, h2, h3, h4, h5, h6 ) {
+  font-family: type.$heading;
+}
+
+
+
+a {
+  color: var(--link-color);
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    --link-color: var(--link-on-color);
+  }
+
+  &:focus {
+    outline: 2px solid currentcolor;
+    outline-offset: 3px;
+    text-decoration: none;
+
+    &:not( :focus-visible ) { outline: none; }
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentcolor;
+    outline-offset: 3px;
+    text-decoration: none;
+  }
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}

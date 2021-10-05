@@ -1,0 +1,8 @@
+{
+  "layout": "layouts/presentation.njk",
+  "tags": [
+    "nav",
+    "presentation"
+  ],
+  "permalink": "/{{ page.fileSlug }}/"
+}

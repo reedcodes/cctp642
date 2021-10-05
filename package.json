@@ -1,0 +1,27 @@
+{
+  "name": "cctp642",
+  "version": "1.0.0",
+  "description": "Content Analysis",
+  "author": "Reed Piernock",
+  "homepage": "https://reedcodes.github.io/cctp642/",
+  "repository": "https://github.com/reedcodes/cctp642",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "a11y-color-tokens": "^0.5.0",
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "jquery": "^3.6.0",
+    "npm-run-all": "^4.1.5",
+    "reveal.js": "^4.1.3"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "tokens": "npx a11y-color-tokens --colorTokensPath='source/_data/colors.js' --outputDirPath='source/assets/sass/colors' --compatibilityDocsPath='source/assets/sass/colors'",
+    "sass": "gulp sass",
+    "eleventy:dev": "SITE_ENV=dev npx @11ty/eleventy",
+    "eleventy": "SITE_ENV=prod npx @11ty/eleventy",
+    "build:dev": "npm-run-all tokens sass eleventy:dev",
+    "build": "npm-run-all tokens sass eleventy"
+  }
+}

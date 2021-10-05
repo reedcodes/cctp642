@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+<head>
+  {% include "partials/head.njk" %}
+  {% block head_css %}{% endblock head_css %}
+</head>
+<body>
+
+  {% block header %}
+    {% include "partials/header.njk" %}
+  {% endblock header %}
+
+
+  {% block main_title %}
+    {% if not home %}
+      <h1>{{ title }}</h1>
+    {% endif %}
+  {% endblock main_title %}
+
+  {% block main_content %}
+    <main class="main">
+      {{ content | safe }}
+    </main>
+  {% endblock main_content %}
+
+  {% block scripts %}{% endblock scripts %}
+
+</body>
+</html>

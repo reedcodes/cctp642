@@ -1,0 +1,49 @@
+/* 🛑 STOP!
+  Do not change this file directly.
+  Modify colors in source/_data/colors.js
+ */
+
+$color-red: rgba(230, 57, 70, 1) !default;
+$color-on-red: rgb(46, 0, 3) !default;
+$color-palegreen: rgba(241, 250, 238, 1) !default;
+$color-on-palegreen: rgb(104, 118, 100) !default;
+$color-powderblue: rgba(168, 218, 220, 1) !default;
+$color-on-powderblue: rgb(63, 95, 97) !default;
+$color-blue: rgba(69, 123, 157, 1) !default;
+$color-on-blue: rgb(251, 253, 254) !default;
+$color-slate: rgba(29, 53, 87, 1) !default;
+$color-on-slate: rgb(139, 158, 185) !default;
+$color-warmgray: rgba(45, 49, 66, 1) !default;
+$color-on-warmgray: rgb(149, 153, 167) !default;
+
+$base-color-tokens: ("red", "palegreen", "powderblue", "blue", "slate", "warmgray");
+
+$color-tokens: (
+  "color-red": $color-red,
+  "color-on-red": $color-on-red,
+  "color-palegreen": $color-palegreen,
+  "color-on-palegreen": $color-on-palegreen,
+  "color-powderblue": $color-powderblue,
+  "color-on-powderblue": $color-on-powderblue,
+  "color-blue": $color-blue,
+  "color-on-blue": $color-on-blue,
+  "color-slate": $color-slate,
+  "color-on-slate": $color-on-slate,
+  "color-warmgray": $color-warmgray,
+  "color-on-warmgray": $color-on-warmgray
+) !default;
+
+@mixin color-tokens() {
+  --color-red: #{$color-red};
+  --color-on-red: #{$color-on-red};
+  --color-palegreen: #{$color-palegreen};
+  --color-on-palegreen: #{$color-on-palegreen};
+  --color-powderblue: #{$color-powderblue};
+  --color-on-powderblue: #{$color-on-powderblue};
+  --color-blue: #{$color-blue};
+  --color-on-blue: #{$color-on-blue};
+  --color-slate: #{$color-slate};
+  --color-on-slate: #{$color-on-slate};
+  --color-warmgray: #{$color-warmgray};
+  --color-on-warmgray: #{$color-on-warmgray};
+}
