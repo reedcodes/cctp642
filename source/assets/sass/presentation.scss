@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @use 'type';
 @use 'colors/color-tokens' as *;
 
@@ -6,18 +8,71 @@
 
 @import 'theme/template/settings';
 
-// Override theme settings (see theme/template/settings.scss)
 $backgroundColor: $color-warmgray;
+
 $mainFont: type.$body;
-$linkColor: $color-powderblue;
-$linkColorHover: $color-on-warmgray;
+$mainFontSize: 2rem;
+$mainColor: $color-on-blue;
+
+$blockMargin: 1.5em;
+
 $headingFont: type.$heading;
-$headingTextShadow: none;
+$headingColor: inherit;
+$headingLineHeight: 1;
 $headingLetterSpacing: inherit;
 $headingTextTransform: none;
+
+$heading1Size: 5rem;
+$heading2Size: 4rem;
+$heading3Size: 3rem;
+$heading4Size: 2rem;
+
+$linkColor: $color-powderblue;
+$linkColorHover: $color-on-warmgray;
+
 $selectionBackgroundColor: inherit;
 
-// Change text colors against light slide backgrounds
-@include mix.light-bg-text-color( $color-on-warmgray );
-
 @import 'theme/template/theme';
+
+
+
+.reveal .slides {
+  text-align: left;
+
+  section {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  :is( h2, h3, h4 ):not( :first-child ) {
+    margin-top: 2rem;
+  }
+
+  ul, ol {
+    margin-top: $blockMargin;
+
+    li {
+      margin-bottom: math.div( $blockMargin, 2 );
+    }
+  }
+
+  hr {
+    height: 1px;
+    background-color: $mainColor;
+    border: 1px solid $mainColor;
+  }
+
+  cite {
+    display: block;
+    margin-left: 1em;
+    font-style: normal;
+    text-indent: -1em;
+  }
+
+  table {
+    font-size: 1rem;
+
+    th, strong { font-size: 1.25rem; }
+    td strong { padding-left: 2rem; }
+  }
+}
