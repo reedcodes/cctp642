@@ -1,5 +1,6 @@
 ---
 title: Religion on _Supernatural_
+classdate: 7 October 2021
 ---
 
 {% revealsection %}
